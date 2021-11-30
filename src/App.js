@@ -13,6 +13,7 @@ import transactions from './db/transactions.json'
 function App() {
   return (
     <div className="App">
+      <p>Hello World</p>
       <Profile
         username={user.username}
         tag={user.tag}
