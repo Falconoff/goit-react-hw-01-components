@@ -10,10 +10,11 @@ import friendsArr from './db/friends.json'
 import TransactionHistory from './components/TransactionHistory/TransactionHistory'
 import transactions from './db/transactions.json'
 
+import AppStyles from './App.module.css';
+
 function App() {
   return (
-    <div className="App">
-      <p>Hello World</p>
+    <div className={AppStyles.App}>
       <Profile
         username={user.username}
         tag={user.tag}

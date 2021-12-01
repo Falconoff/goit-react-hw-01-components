@@ -1,0 +1,17 @@
+.transactionistory {
+  width: 600px;
+  background-color: #fff;
+
+  & th {
+    background-color: #2fd2e7;
+    color: white;
+  }
+}
+
+tr {
+  height: 50px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #eee;
+}
