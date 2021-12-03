@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types'
-import TransactionRow from './TransactionRow'
-import s from './TransactionHistory.module.scss'
+import PropTypes from 'prop-types';
+import TransactionRow from './TransactionRow/TransactionRow';
+import s from './TransactionHistory.module.scss';
 
 export default function TransactionHistory({ items }) {
   return (
@@ -14,7 +14,7 @@ export default function TransactionHistory({ items }) {
       </thead>
 
       <tbody>
-        {items.map((item) => (
+        {items.map(item => (
           <TransactionRow
             key={item.id}
             type={item.type}
@@ -24,9 +24,9 @@ export default function TransactionHistory({ items }) {
         ))}
       </tbody>
     </table>
-  )
+  );
 }
 
 TransactionHistory.propTypes = {
   items: PropTypes.array.isRequired,
-}
+};
