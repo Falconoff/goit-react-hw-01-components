@@ -8,12 +8,8 @@ export default function Statistics({ title, data }) {
       {title && <h2 className={s.title}>{title}</h2>}
 
       <ul className={s.statList}>
-        {data.map(item => (
-          <StatItem
-            label={item.label}
-            percentage={item.percentage}
-            key={item.id}
-          />
+        {data.map(({ label, percentage, id }) => (
+          <StatItem label={label} percentage={percentage} key={id} />
         ))}
       </ul>
     </section>

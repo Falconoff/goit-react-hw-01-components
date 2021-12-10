@@ -2,8 +2,24 @@ import PropTypes from 'prop-types';
 import s from './StatItem.module.scss';
 
 export default function StatItem({ label, percentage }) {
+  function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
+
   return (
-    <li className={s.item}>
+    <li
+      className={s.item}
+      style={{
+        backgroundColor:
+          'rgb(' +
+          getRandomInt(0, 200) +
+          ', ' +
+          getRandomInt(0, 200) +
+          ', ' +
+          getRandomInt(0, 200) +
+          ')',
+      }}
+    >
       <span className={s.label}>{label}</span>
       <span className={s.percentage}>{percentage}%</span>
     </li>

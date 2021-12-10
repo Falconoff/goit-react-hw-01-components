@@ -20,7 +20,7 @@ function App() {
         stats={user.stats}
       />
 
-      <Statistics title="qweqwe" data={data} />
+      <Statistics title="upload stats" data={data} />
 
       <FriendList friends={friendsArr} />
 
