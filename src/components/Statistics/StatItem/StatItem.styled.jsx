@@ -1,4 +1,6 @@
-.item {
+import styled from '@emotion/styled';
+
+export const StatListItem = styled.li`
   flex-basis: 33%;
   display: flex;
   flex-direction: column;
@@ -6,10 +8,12 @@
   padding: 10px 20px;
   border: 1px solid #aaa;
   color: #fff;
-}
-.label {
+`;
+
+export const Label = styled.span`
   font-size: 12px;
-}
-.percentage {
+`;
+
+export const Percentage = styled.span`
   font-size: 16px;
-}
+`;

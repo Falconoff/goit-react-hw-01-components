@@ -1,10 +1,13 @@
-.profile {
+import styled from '@emotion/styled';
+
+export const Card = styled.div`
   width: 200px;
   background-color: #fff;
   font-size: 14px;
   margin: 50px auto;
-}
-.description {
+`;
+
+export const Description = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,23 +17,26 @@
     margin-top: 0;
     margin-bottom: 5px;
   }
-}
+`;
 
-.avatar {
+export const Avatar = styled.img`
   width: 100px;
   height: auto;
   margin-bottom: 20px;
-}
-.name {
+`;
+
+export const UserName = styled.p`
   font-size: 16px;
   font-weight: 700;
   color: #000;
-}
-.tag,
-.location {
-  color: #888;
-}
-.stats {
+`;
+
+export const UserTag = styled.p`
+  color: #88f;
+`;
+export const UserLocation = UserTag;
+
+export const StatsList = styled.ul`
   list-style: none;
   display: flex;
   margin: 0;
@@ -46,11 +52,12 @@
     padding: 10px;
     border: 1px solid #aaa;
   }
-}
-.label {
+`;
+
+export const StatsItemName = styled.span`
   font-size: 12px;
-}
-.quantity {
+`;
+export const StatsItemQuantity = styled.span`
   font-size: 14px;
   font-weight: 700;
-}
+`;

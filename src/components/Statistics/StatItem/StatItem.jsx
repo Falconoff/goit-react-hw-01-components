@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from './StatItem.module.scss';
+import { StatListItem, Label, Percentage } from './StatItem.styled';
 
 export default function StatItem({ label, percentage }) {
   function getRandomInt(min, max) {
@@ -7,8 +7,7 @@ export default function StatItem({ label, percentage }) {
   }
 
   return (
-    <li
-      className={css.item}
+    <StatListItem
       style={{
         backgroundColor:
           'rgb(' +
@@ -20,9 +19,9 @@ export default function StatItem({ label, percentage }) {
           ')',
       }}
     >
-      <span className={css.label}>{label}</span>
-      <span className={css.percentage}>{percentage}%</span>
-    </li>
+      <Label>{label}</Label>
+      <Percentage>{percentage}%</Percentage>
+    </StatListItem>
   );
 }
 
