@@ -7,11 +7,12 @@ import Profile from '../Profile/Profile';
 import Statistics from '../Statistics/Statistics';
 import FriendList from '../FriendList/FriendList';
 import TransactionHistory from '../TransactionHistory/TransactionHistory';
-import css from './App.module.scss';
+
+import { Container } from './App.styled';
 
 function App() {
   return (
-    <div className={css.app}>
+    <Container>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -25,7 +26,7 @@ function App() {
       <FriendList friends={friendsArr} />
 
       <TransactionHistory items={transactions} />
-    </div>
+    </Container>
   );
 }
 

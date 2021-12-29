@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import StatItem from './StatItem/StatItem';
-// import css from './Statistics.module.scss';
 import { Section, Title, StatList } from './Statistics.styled';
 
 export default function Statistics({ title, data }) {

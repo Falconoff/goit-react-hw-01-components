@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import TransactionRow from './TransactionRow/TransactionRow';
-import css from './TransactionHistory.module.scss';
+import { TransactionHistoryTable } from './TransactionHistory.styled';
 
 export default function TransactionHistory({ items }) {
   return (
-    <table className={css.transactionHistory}>
+    <TransactionHistoryTable>
       <thead>
         <tr>
           <th>Type</th>
@@ -23,7 +23,7 @@ export default function TransactionHistory({ items }) {
           />
         ))}
       </tbody>
-    </table>
+    </TransactionHistoryTable>
   );
 }
 

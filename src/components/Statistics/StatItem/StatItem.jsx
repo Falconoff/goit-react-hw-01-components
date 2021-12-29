@@ -4,7 +4,7 @@ import { StatListItem, Label, Percentage } from './StatItem.styled';
 
 export default function StatItem({ label, percentage }) {
   return (
-    <StatListItem style={getRandomBackgroundColor(0, 200)}>
+    <StatListItem style={getRandomBackgroundColor(50, 128)}>
       <Label>{label}</Label>
       <Percentage>{percentage}%</Percentage>
     </StatListItem>
